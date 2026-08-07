@@ -1,0 +1,37 @@
+# PaperTunedLLM Dependencies
+
+# Backend (FastAPI + Data Validation)
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+
+# Model Inference (vLLM)
+# Note: vLLM usually requires a specific CUDA environment. 
+# It's recommended to run it via the official Docker image instead of installing it here.
+# vllm 
+
+# Retrieval-Augmented Generation (RAG)
+qdrant-client
+sentence-transformers # For BGE-M3
+PyMuPDF # For extracting text from PDF papers
+unstructured # For advanced document parsing
+
+# Training / Fine-tuning (Kaggle/GPU environment)
+# These are included for completeness but will likely be run on Kaggle
+datasets
+transformers
+peft
+trl
+accelerate
+bitsandbytes
+# unsloth is usually installed from source on Kaggle
+# llamafactory is usually cloned and installed from source
+
+# Quantization (AWQ)
+autoawq
+
+# Utilities
+python-dotenv
+requests
+aiohttp

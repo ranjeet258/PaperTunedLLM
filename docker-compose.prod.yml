@@ -1,0 +1,46 @@
+services:
+  backend:
+    image: ranjeetgupta1/papertunedllm-backend:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - QDRANT_URL=http://qdrant:6333
+      - VLLM_URL=http://vllm:80/v1
+    depends_on:
+      - qdrant
+      - vllm
+
+  frontend:
+    image: ranjeetgupta1/papertunedllm-frontend:latest
+    ports:
+      - "80:3000"
+    depends_on:
+      - backend
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  vllm:
+    image: ghcr.io/huggingface/text-generation-inference:2.3.1
+    ports:
+      - "8000:80"
+    volumes:
+      - hf_cache:/data
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HF_TOKEN:-}
+    command: --model-id ranjeet258/Qwen2.5-3B-QASPER-AWQ-4bit --max-input-tokens 4096 --max-total-tokens 5120 --quantize awq
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+
+volumes:
+  qdrant_data:
+  hf_cache:

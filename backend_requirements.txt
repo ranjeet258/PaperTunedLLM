@@ -1,0 +1,19 @@
+# Backend Web Server
+fastapi
+uvicorn[standard]
+pydantic
+python-multipart
+python-dotenv
+
+# External Services
+requests
+aiohttp
+
+# RAG
+qdrant-client
+sentence-transformers
+PyMuPDF
+unstructured
+
+# Install CPU PyTorch to avoid massive CUDA binary downloads (fixes hash mismatch errors)
+--extra-index-url https://download.pytorch.org/whl/cpu
