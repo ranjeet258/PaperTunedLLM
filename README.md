@@ -7,10 +7,10 @@ PaperTunedLLM is a production-ready AI Research Assistant specialized in Machine
 The following charts demonstrate the evaluation results of the base model versus the quantized and fine-tuned models.
 
 ### Base vs Quantized Model Performance
-![Base vs Quantized Performance](Expt_Notebooks/Base_vs_Quantized.png)
+![Base vs Quantized Performance](notebooks/Base_vs_Quantized.png)
 
 ### Testing and Inference Metrics
-![Testing Metrics](Expt_Notebooks/testing.png)
+![Testing Metrics](notebooks/testing.png)
 
 ## Architecture and Core Components
 

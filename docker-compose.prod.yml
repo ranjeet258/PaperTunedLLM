@@ -44,3 +44,5 @@ services:
 volumes:
   qdrant_data:
   hf_cache:
+
+##   http://localhost:3000 , http://localhost:8080/docs

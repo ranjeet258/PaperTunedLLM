@@ -10,7 +10,6 @@ finetuning_type: lora
 lora_target: all
 
 ### dataset
-# You will need to add the dataset info to LlamaFactory's dataset_info.json
 # e.g., "qasper": { "file_name": "qasper_llamafactory.json" }
 dataset: qasper
 template: qwen

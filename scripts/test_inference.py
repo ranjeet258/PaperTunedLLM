@@ -46,3 +46,6 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 print("\n--- Model Output ---")
 print(response)
 print("--------------------")
+
+
+#   http://localhost:3000 , http://localhost:8080/docs
