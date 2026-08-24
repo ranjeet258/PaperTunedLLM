@@ -2,6 +2,9 @@
 
 PaperTunedLLM is a production-ready AI Research Assistant specialized in Machine Learning research papers. It is built using modern open-source Large Language Model (LLM) technologies and demonstrates the complete lifecycle of adapting an LLM, encompassing fine-tuning, evaluation, quantization, retrieval-augmented generation (RAG), and deployment. 
 
+## Video
+https://github.com/user-attachments/assets/c16ba95f-8f9f-45fb-b668-a66b60d2b11c
+
 ## Experimental Results
 
 The following charts demonstrate the evaluation results of the base model versus the quantized and fine-tuned models.
