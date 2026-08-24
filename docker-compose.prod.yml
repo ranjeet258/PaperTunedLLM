@@ -45,4 +45,5 @@ volumes:
   qdrant_data:
   hf_cache:
 
-##   http://localhost:3000 , http://localhost:8080/docs
+##   docker-compose up --build                http://localhost:3000 ,       http://localhost:8080/docs ,  
+#    .venv\Scripts\Activate.ps1  , docker compose up -d   , docker compose logs -f backend

@@ -44,6 +44,7 @@ services:
       - qdrant
     volumes:
       - ./datasets:/app/datasets # For uploading papers
+      - hf_cache:/root/.cache/huggingface
     restart: unless-stopped
 
   frontend:
@@ -60,3 +61,4 @@ services:
 
 volumes:
   qdrant_data:
+  hf_cache:

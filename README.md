@@ -1,7 +1,10 @@
 # PaperTunedLLM (Qwen2.5-3B | Fine-Tuned on QASPER | AWQ | RAG | TGI )
 
-PaperTunedLLM is a production-ready AI Research Assistant specialized in Machine Learning research papers. It is built using modern open-source Large Language Model (LLM) technologies and demonstrates the complete lifecycle of adapting an LLM, encompassing fine-tuning, evaluation, quantization, retrieval-augmented generation (RAG), and deployment. 
+PaperTunedLLM turns dense machine learning papers into clear, verifiable insights at production scale.  
+Fine-tuned on QASPER via QLoRA and compressed with 4-bit AWQ, it masters complex academic reasoning on lightweight hardware.  
 
+Augmented by a BGE-M3 & Qdrant RAG pipeline, it extracts exact paragraphs and evidence from uploaded PDFs with zero hallucination.  Delivered as a unified, full-stack microservice powered by FastAPI, Next.js, and TGI. 
+ 
 ## Video
 https://github.com/user-attachments/assets/c16ba95f-8f9f-45fb-b668-a66b60d2b11c
 
@@ -16,6 +19,7 @@ The following charts demonstrate the evaluation results of the base model versus
 ![Testing Metrics](notebooks/testing.png)
 
 ## Architecture and Core Components
+![Architecture](notebooks\Architecture.png)
 
 The project architecture is composed of the following functional layers:
 
