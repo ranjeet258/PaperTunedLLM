@@ -19,7 +19,7 @@ The following charts demonstrate the evaluation results of the base model versus
 ![Testing Metrics](notebooks/testing.png)
 
 ## Architecture and Core Components
-![Architecture](notebooks\Architecture.png)
+![Architecture](notebooks/Architecture.png)
 
 The project architecture is composed of the following functional layers:
 
